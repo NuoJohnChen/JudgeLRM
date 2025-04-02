@@ -17,7 +17,7 @@ Demo: https://huggingface.co/spaces/nuojohnchen/JudgeLRMDemo
       title={JudgeLRM: Large Reasoning Models as a Judge}, 
       author={Nuo Chen, Zhiyuan Hu, Qingyun Zou, Jiaying Wu, Qian Wang, Bryan Hooi, Bingsheng He},
       year={2025},
-      eprint={2502.14768},
+      eprint={2504.00050},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2504.00050}, 
