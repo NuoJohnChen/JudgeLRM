@@ -9,7 +9,12 @@ JudgeLRM is a family of judgment-oriented Large Language Models (LLMs) designed 
 
 [Explore](https://huggingface.co/spaces/nuojohnchen/JudgeLRMDemo) JudgeLRM’s reasoning capabilities and detailed comparisons by testing it against other Hugging Face models with your own questions!
 
----
+## Acknowledgements
+- [LogicRL](https://github.com/Unakar/Logic-RL) 🔗
+- [JudgeLM](https://github.com/Jiayi-Pan/TinyZero) 🔗
+- [PandaLM](https://github.com/AlphaPav/mem-kk-logic) 🔗
+
+------
 
 ## Citation
 ```
