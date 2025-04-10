@@ -45,7 +45,7 @@ python3 -m verl.trainer.main_ppo \
     trainer.experiment_name='qwen2_7b_function_rm_323' \
     trainer.n_gpus_per_node=4 \
     trainer.nnodes=1 \
-    trainer.default_local_dir=/shared/hdd/nuochen/models/GRPO_logic_KK_321/base_reward_7b_323 \
+    trainer.default_local_dir=models/GRPO_logic_KK_321/base_reward_7b_323 \
     trainer.save_freq=200 \
     trainer.test_freq=20 \
     trainer.total_epochs=1 $@

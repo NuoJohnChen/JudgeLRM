@@ -15,8 +15,8 @@ MODEL_PATH=Qwen/Qwen2.5-3B-Instruct
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     +algorithm.reward_ablation=reward_w_length \
-    data.train_files=/shared/hdd/nuochen/Logic-RL/data/judgelrm/instruct/jppl/train.parquet \
-    data.val_files=/shared/hdd/nuochen/Logic-RL/data/judgelrm/instruct/jppl/test.parquet \
+    data.train_files=Logic-RL/data/judgelrm/instruct/jppl/train.parquet \
+    data.val_files=Logic-RL/data/judgelrm/instruct/jppl/test.parquet \
     data.train_batch_size=16 \
     data.val_batch_size=16 \
     data.max_prompt_length=1024 \
@@ -47,7 +47,7 @@ python3 -m verl.trainer.main_ppo \
     trainer.experiment_name='3b_function_rm' \
     trainer.n_gpus_per_node=4 \
     trainer.nnodes=1 \
-    trainer.default_local_dir=/shared/hdd/nuochen/models/GRPO_logic_judgelrm_321/base_reward_323 \
+    trainer.default_local_dir=models/GRPO_logic_judgelrm_321/base_reward_323 \
     trainer.save_freq=200 \
     trainer.test_freq=100 \
     trainer.total_epochs=1 $@
