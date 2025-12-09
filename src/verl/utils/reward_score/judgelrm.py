@@ -147,7 +147,7 @@ def parse_model_answer(answer_text: list, expected_scores: list, reward_ablation
     try:
 
         expected_relation = expected_scores[0] >= expected_scores[1]
-        # 检查模型答案的比较关系
+        
         answer_relation = answer_text[0] >= answer_text[1]
         
 

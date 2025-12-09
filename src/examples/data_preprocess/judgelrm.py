@@ -20,13 +20,13 @@ def make_prefix(dp, template_type):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--local_dir', default='/shared/hdd/nuochen/Logic-RL/data/judgelrm/instruct/jppl')
+    parser.add_argument('--local_dir', default='Logic-RL/data/judgelrm/instruct/jppl')
     parser.add_argument('--hdfs_dir', default=None)
-    parser.add_argument('--data_path', default='/shared/hdd/nuochen/datasets/JudgeLM-100K/judgelm_train_system_100k_no_metadata_cleaned.jsonl')
+    parser.add_argument('--data_path', default='datasets/JudgeLM-100K/judgelm_train_system_100k_no_metadata_cleaned.jsonl')
     
 
 
-    parser.add_argument('--val_data_path', default='/shared/hdd/nuochen/datasets/JudgeLM-100K/judgelm_val_5k_gpt4_updated_no_metadata.jsonl')
+    parser.add_argument('--val_data_path', default='datasets/JudgeLM-100K/judgelm_val_5k_gpt4_updated_no_metadata.jsonl')
     parser.add_argument('--train_size', type=int, default=900)
     parser.add_argument('--test_size', type=int, default=100)
     parser.add_argument('--template_type', type=str, default='qwen-instruct')
