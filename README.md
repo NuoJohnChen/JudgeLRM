@@ -20,6 +20,6 @@ Demo: https://huggingface.co/spaces/nuojohnchen/JudgeLRMDemo
       eprint={2502.14768},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={[https://arxiv.org/abs/2502.14768](https://arxiv.org/abs/2504.00050)}, 
+      url={https://arxiv.org/abs/2504.00050}, 
 }
 ```
