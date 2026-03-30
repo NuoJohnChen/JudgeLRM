@@ -4,6 +4,16 @@
 
 JudgeLRM is a family of judgment-oriented Large Language Models (LLMs) designed to enhance evaluative reasoning through reinforcement learning (RL) with judge-wise, outcome-driven rewards. It demonstrates that judgment is inherently a reasoning-intensive task and addresses the limitations of supervised fine-tuning (SFT) in pair-wise evaluation. Notably, JudgeLRM-3B surpasses GPT-4, and JudgeLRM-7B outperforms DeepSeek-R1.
 
+## Reproducibility and Open Weights
+
+Our submission provides a fully reproducible framework and open weights. Benchmarking, replication, and challenges are welcome via the checkpoints released at:
+
+- https://huggingface.co/anonymous-D1C4/JudgeLRM-3B
+- https://huggingface.co/anonymous-D1C4/JudgeLRM-4B
+- https://huggingface.co/anonymous-D1C4/JudgeLRM-7B
+- https://huggingface.co/anonymous-D1C4/JudgeLRM-8B
+- https://huggingface.co/anonymous-D1C4/JudgeLRM-14B
+
 ## 🛠️ Environment
 
 ```
