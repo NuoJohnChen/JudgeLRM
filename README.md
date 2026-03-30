@@ -2,6 +2,10 @@
 
 <a href='https://arxiv.org/abs/2504.00050'><img src='https://img.shields.io/badge/arXiv-2504.00050-b31b1b.svg'></a> &nbsp;
 
+<p align="center">
+  📃 <a href="https://arxiv.org/abs/2504.00050" target="_blank">[Paper]</a> • 💻 <a href="https://github.com/NuoJohnChen/JudgeLRM" target="_blank">[Github]</a> • 🤗 <a href="https://huggingface.co/nuojohnchen/JudgeLRM-7B" target="_blank">[Models]</a> • 🏆 <a href="https://huggingface.co/spaces/nuojohnchen/JudgeLRMDemo" target="_blank">[Playground]</a>
+</p>
+
 ## Overview
 JudgeLRM is a family of judgment-oriented Large Language Models (LLMs) designed to enhance evaluative reasoning through reinforcement learning (RL) with judge-wise, outcome-driven rewards. It demonstrates that judgment is inherently a reasoning-intensive task and addresses the limitations of supervised fine-tuning (SFT) in pair-wise evaluation. Notably, JudgeLRM-3B surpasses GPT-4, and JudgeLRM-7B outperforms DeepSeek-R1.
 
