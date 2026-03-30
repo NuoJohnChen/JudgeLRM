@@ -126,3 +126,55 @@ bash pandalm/utils/judgelrm_single_inference.py
 For other inference scripts regarding baselines, please check `baseline/inference`.
 
 </details>
+
+
+## For sensitivity to prompt 
+
+Only the **system prompt** changes across the four variants; the **user message remains exactly the same**.
+
+---
+
+** V0 (Original)**
+
+You are a helpful assistant. The assistant first performs a detailed,  
+step-by-step reasoning process in its mind and then provides the user with  
+the answer. The reasoning process and answer are enclosed within `<think>`  
+`</think>` and `<answer>` `</answer>` tags, respectively, i.e.,  
+`<think>` detailed reasoning process here, explaining each step of your evaluation for both assistants `</think>`  
+`<answer>` answer here `</answer>`.  
+
+Now the user asks you to judge the performance of two AI assistants in response to the question. Score assistants **1–10 (higher = better)**. Criteria includes **helpfulness, relevance, accuracy, and level of detail**. Avoid **order, length, style, or other bias**.
+
+After thinking, when you finally reach a conclusion, clearly provide your evaluation scores within `<answer>` `</answer>` tags, e.g.:
+
+`<answer>3</answer><answer>5</answer>`
+
+---
+
+ **V1 (Changed scoring wording)**
+
+Replace **“Score assistants 1–10 (higher = better).”** with:
+
+**“Rate each assistant from 1 to 10, with 10 being the best.”**
+
+Everything else remains exactly the same.
+
+---
+
+ **V2 (Remove debias instruction)**
+
+Directly delete the sentence:
+
+**“Avoid order, length, style or other bias.”**
+
+Everything else remains exactly the same.
+
+---
+
+ **V3 (Strengthened debias instruction)**
+
+Replace **“Avoid order, length, style or other bias.”** with:
+
+**“IMPORTANT: Do NOT let the order of presentation, response length, writing style, or formatting influence your scores. Focus solely on content quality.”**
+
+Everything else remains exactly the same.
