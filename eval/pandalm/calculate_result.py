@@ -38,7 +38,7 @@ def calculate_metrics(y_true, y_pred):
 
 if __name__ == "__main__":
     # 默认路径
-    DEFAULT_PANDALM_PATH = "/user/PandaLM/data/results_qwen38b_sft_think.json"#"/user/PandaLM/data/results_jugdelrm7b.json"#"/user/PandaLM/data/results/results_qwen257binstructsft_Social_Professional_Networking_needreasoning.json" #"/user/PandaLM/data/JudgeLRM-14B-reward-wo-score-step400.json"#/user/PandaLM/data/results_qwen25_7b_zhiyuan_function_rm_323-step-600.json"
+    DEFAULT_PANDALM_PATH = "/user/PandaLM/data/results_qwen38b_sft_think.json"#"/user/PandaLM/data/results_jugdelrm7b.json"#"/user/PandaLM/data/results/results_qwen257binstructsft_Social_Professional_Networking_needreasoning.json" #"/user/PandaLM/data/DECIDE-14B-reward-wo-score-step400.json"#/user/PandaLM/data/results_qwen25_7b_zhiyuan_function_rm_323-step-600.json"
     DEFAULT_TESTSET_PATH = "/user/PandaLM/data/testset-v1.json"#"/user/PandaLM/data/category_neededreasoning/pandalmtest_Life_Utility_needreasoning.json"##"/user/PandaLM/data/testset-v1.json"
 
     # 设置命令行参数

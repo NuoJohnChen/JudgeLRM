@@ -1,18 +1,18 @@
-# JudgeLRM:
+# DECIDE:
 
 ## Overview
 
-JudgeLRM is a family of judgment-oriented Large Language Models (LLMs) designed to enhance evaluative reasoning through reinforcement learning (RL) with judge-wise, outcome-driven rewards. It demonstrates that judgment is inherently a reasoning-intensive task and addresses the limitations of supervised fine-tuning (SFT) in pair-wise evaluation. Notably, JudgeLRM-3B surpasses GPT-4, and JudgeLRM-7B outperforms DeepSeek-R1.
+DECIDE is a family of judgment-oriented Large Language Models (LLMs) designed to enhance evaluative reasoning through reinforcement learning (RL) with judge-wise, outcome-driven rewards. It demonstrates that judgment is inherently a reasoning-intensive task and addresses the limitations of supervised fine-tuning (SFT) in pair-wise evaluation. Notably, DECIDE-3B surpasses GPT-4, and DECIDE-7B outperforms DeepSeek-R1.
 
 ## Reproducibility and Open Weights
 
 Our submission provides a fully reproducible framework and open weights. Benchmarking, replication, and challenges are welcome via the checkpoints released at:
 
-- https://huggingface.co/anonymous-D1C4/JudgeLRM-3B
-- https://huggingface.co/anonymous-D1C4/JudgeLRM-4B
-- https://huggingface.co/anonymous-D1C4/JudgeLRM-7B
-- https://huggingface.co/anonymous-D1C4/JudgeLRM-8B
-- https://huggingface.co/anonymous-D1C4/JudgeLRM-14B
+- https://huggingface.co/anonymous-D1C4/DECIDE-3B
+- https://huggingface.co/anonymous-D1C4/DECIDE-4B
+- https://huggingface.co/anonymous-D1C4/DECIDE-7B
+- https://huggingface.co/anonymous-D1C4/DECIDE-8B
+- https://huggingface.co/anonymous-D1C4/DECIDE-14B
 
 ## 🛠️ Environment
 
@@ -25,16 +25,16 @@ pip install -r requirements.txt
 To preprocess the data for training:
 
 ```
-python src/examples/data_preprocess/judgelrm.py
+python src/examples/data_preprocess/decide.py
 ```
 
-## 🚀 Train JudgeLRM
+## 🚀 Train DECIDE
 ```
 # Training using GRPO
-bash src/scripts/judgelrm_grpo7b_{n}gpu.sh
+bash src/scripts/decide_grpo7b_{n}gpu.sh
 
 # Inference after training
-python pandalm/utils/judgelrm_inference.py
+python pandalm/utils/decide_inference.py
 ```
 
 ## ⚖️ Inference & Evaluation
@@ -43,7 +43,7 @@ python pandalm/utils/judgelrm_inference.py
 See `pandalm/utils` for specific scripts.
 
 ```
-python pandalm/utils/judgelrm_{qwen3_}inference.py
+python pandalm/utils/decide_{qwen3_}inference.py
 python pandalm/calculate_result.py
 ```
 
@@ -124,7 +124,7 @@ bash run_spin.sh
 ### Baseline: Single Judge
 
 ```
-bash pandalm/utils/judgelrm_single_inference.py
+bash pandalm/utils/decide_single_inference.py
 ```
 
 For other inference scripts regarding baselines, please check `baseline/inference`.

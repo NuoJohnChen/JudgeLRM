@@ -13,8 +13,8 @@ MODEL_PATH=Qwen/Qwen2.5-7B-Instruct
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     +algorithm.reward_ablation=reward_w_length \
-    data.train_files=data/judgelrm/instruct/jppl/train.parquet \
-    data.val_files=data/judgelrm/instruct/jppl/test.parquet \
+    data.train_files=data/decide/instruct/jppl/train.parquet \
+    data.val_files=data/decide/instruct/jppl/test.parquet \
     data.train_batch_size=16 \
     data.val_batch_size=16 \
     data.max_prompt_length=1024 \

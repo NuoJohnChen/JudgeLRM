@@ -20,7 +20,7 @@ def make_prefix(dp, template_type):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--local_dir', default='Logic-RL/data/judgelrm/instruct/jppl')
+    parser.add_argument('--local_dir', default='Logic-RL/data/decide/instruct/jppl')
     parser.add_argument('--hdfs_dir', default=None)
     parser.add_argument('--data_path', default='datasets/JudgeLM-100K/judgelm_train_system_100k_no_metadata_cleaned.jsonl')
     
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     
-    data_source = "judgelrm"
+    data_source = "decide"
     TRAIN_SIZE = args.train_size
     TEST_SIZE = args.test_size
 

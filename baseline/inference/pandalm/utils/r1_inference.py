@@ -64,7 +64,7 @@ class PandaLMBatchInferenceProvider(object):
             r"<unk>|<pad>|<s>|</s>|\[PAD\]|<\|endoftext\|>|\[UNK\]|\[CLS\]|\[MASK\]|<\|startofpiece\|>|<\|endofpiece\|>|\[gMASK\]|\[sMASK\]"
         )
 
-    def build_judgelrm_prompt(
+    def build_decide_prompt(
         self, instruction, input, resp1, resp2, result=None, explain=None, ref=None
     ):
         resp1 = self.pattern.sub("", resp1.strip()).strip()
@@ -182,7 +182,7 @@ You are a helpful assistant. The assistant first performs a detailed, step-by-st
             output_embeddings[-num_new_tokens:] = output_embeddings_avg
 
     def preprocess_input(self, instruction, input, response1, response2):
-        prompt = self.build_judgelrm_prompt(instruction, input, response1, response2)
+        prompt = self.build_decide_prompt(instruction, input, response1, response2)
         self.prepared.append(self.tokenizer(prompt, return_tensors="pt", padding=True))
 
     def postprocess_output(self, text):
